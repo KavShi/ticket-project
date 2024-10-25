@@ -2,7 +2,7 @@
 
 This is a ticketing support system created for course PA1414 at BTH.
 
-TODO: Add image that helps to understand the project.
+![Skärmbild 2024-10-25 225324](https://github.com/user-attachments/assets/f0de38a7-8c60-481b-bb27-b035e3edef63)
 
 ## How to Use
 
@@ -11,6 +11,7 @@ TODO: Add image that helps to understand the project.
 Before running this site, make sure you have Node.JS, npm and MariaDB installed.
 [You can install Node.JS by clicking here.](https://nodejs.org/)
 [You can install MariaDB by clicking here.](https://mariadb.org/download/)
+
 From there, create your account and a database in MariaDB.
 
 ### Build
