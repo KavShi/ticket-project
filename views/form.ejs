@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/form.css' />
+    <title>Form Page</title>
+</head>
+
+<body>
+    <div class="content">
+    <h1>Enter your details below:</h1><br>
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+        <label for="choice">What are you seeking help for?</label><br>
+        <select name="choice" required>
+            <option value="IT">IT</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="File Management">File Management</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+
+        <label for="title">Title:</label><br>
+        <input type="text" name="title" required>
+        <br><br>
+
+        <label for="textareaData">Describe your problem:</label><br>
+        <textarea name="textareaData" rows="10" cols="60" minlength="5" maxlength="500"></textarea>
+        <br><br>
+
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file">
+        <br>
+
+    <button type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>

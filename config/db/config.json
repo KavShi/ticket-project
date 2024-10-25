@@ -1,0 +1,7 @@
+{
+    "host":     "Kavehs-Vivobook.local",
+    "user":     "dbadm",
+    "password": "P@ssw0rd",
+    "database": "support",
+    "multipleStatements": true
+}

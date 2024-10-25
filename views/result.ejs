@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/form.css' />
+    <title>Result Page</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Your ticket has been sent!</h1>
+        <p>Ticket number: <strong><%= ticketNumber %></strong></p>
+        <p><%= firstName %> <%= lastName %></p>
+        <p>Topic: <strong><%= choice %></strong> </p>
+        <h2><%= title %></h2>
+        <p><%= additionalInfo %></p>
+        <br>
+        <%if (filePath) { %>  
+            <p><strong>Uploaded File:</strong></p>
+            <% if (filePath.endsWith('.jpg') || filePath.endsWith('.png')) { %>
+                <img src="/<%= filePath %>" alt="Uploaded Image" style="max-width: 300px;">
+            <% } else { %>
+                <a href="/<%= filePath %>" download>Download File</a>
+            <% } %>
+        <% } %>
+        <br>
+        <a href="/">Click here to go back to the main menu</a>
+    </div>
+</body>
+</html>
