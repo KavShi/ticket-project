@@ -17,7 +17,7 @@ From there, create your account and a database in MariaDB.
 ### Build
 The project first requires you to run the setup.sql file. Without it the site is unable to store any tickets.
 ```
-mysql -u your_username -p your_database_name < setup.sql
+mariadb < setup.sql
 ```
 The site also runs on localhost:3000 by default. You can change the port by simply altering this line [in this file.](https://github.com/KavShi/ticket-project/blob/main/bin/www)
 ```
